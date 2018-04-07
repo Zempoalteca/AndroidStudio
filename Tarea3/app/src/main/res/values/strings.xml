@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Lista de Pendientes</string>
+    <string name="texto_btnAgregar">Agregar</string>
+    <string name="texto_hintTareaNueva">Tarea Nueva</string>
+    <string name="tituloLP">Lista de Pendientes</string>
+    <string name="tituloLT">Lista de Terminados</string>
+</resources>

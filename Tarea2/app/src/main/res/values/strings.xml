@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Tarea2</string>
+    <string name="tvString">Nombre(s):</string>
+    <string name="hintNombre">Ingrese su nombre!</string>
+    <string name="tv_apPaterno">Apellido Paterno:</string>
+    <string name="hint_apPaterno">Ingrese su primer apellido!</string>
+    <string name="tv_apMaterno">Apellido materno:</string>
+    <string name="hint_apMaterno">Ingrese su segundo apellido!</string>
+    <string name="tv_estadoNacimiento">Lugar de nacimiento:</string>
+    <string name="btn_limpiar">Limpiar</string>
+    <string name="btn_generaRFC">Genera RFC</string>
+    <string name="btn_generaCURP">Genera CURP</string>
+    <string name="resultadoRFC">Tu RFC:</string>
+    <string name="resultadoCURP">Tu CURP:</string>
+</resources>

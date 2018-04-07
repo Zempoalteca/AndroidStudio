@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Hilos</string>
+    <string name="textobtnDescargar">Iniciar Descarga</string>
+    <string name="texto_status">Estatus</string>
+</resources>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.android.capacitacion.gabriel.tarea3.MainActivity"
+    android:orientation="vertical"
+    android:layout_margin="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/et_tareaNueva"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/texto_hintTareaNueva"
+            android:maxLines="1"/>
+
+        <Button
+            android:id="@+id/btn_Agregar"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="@string/texto_btnAgregar" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/tv_tituloLP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tituloLP"
+            android:textStyle="bold"
+            android:gravity="center_horizontal"/>
+
+        <ListView
+            android:id="@+id/listaPendientes"
+            android:layout_width="match_parent"
+            android:layout_height="190dp">
+        </ListView>
+        <TextView
+            android:id="@+id/tc_tituloLT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tituloLT"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:gravity="center_horizontal"/>
+        <ListView
+            android:id="@+id/listaTerminados"
+            android:layout_width="match_parent"
+            android:layout_height="190dp">
+
+        </ListView>
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

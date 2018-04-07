@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Hola Mundo</string>
+    <string name="texto_resultado">Tu índice de masa corporal es:</string>
+    <string name="texto_peso">Ingresa tu peso:</string>
+    <string name="texto_altura">Ingresa tu altura:</string>
+    <string name="texto_sexo">Ingresa tu sexo:</string>
+    <string name="texto_IMC">Calcula tu IMC</string>
+</resources>

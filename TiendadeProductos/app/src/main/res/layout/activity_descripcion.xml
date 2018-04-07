@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="5dp"
+        android:orientation="vertical"
+        tools:context="com.android.capacitacion.gabriel.tiendadeproductos.DescripcionActivity">
+
+        <ImageView
+            android:id="@+id/imagenCurso"
+            android:layout_width="370dp"
+            android:layout_height="250dp"
+            android:background="#E0F2F1"
+            android:contentDescription="@string/contentDescripcion"/>
+
+        <TextView
+            android:id="@+id/tv_nombreCurso"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:textSize="36sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_descripcion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_requisitos" />
+
+        <TextView
+            android:id="@+id/tv_requisitos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/cost" />
+
+            <TextView
+                android:id="@+id/tv_precio"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/etiquetaInstructor"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_nombreInstructor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:textSize="36sp"
+            android:textStyle="italic" />
+
+        <ImageView
+            android:id="@+id/imagen_instructor"
+            android:layout_width="250dp"
+            android:layout_height="300dp"
+            android:background="#E0F2F1"
+            android:layout_gravity="center_horizontal"
+            android:contentDescription="@string/contentDescripcion"/>
+
+        <RatingBar
+            android:id="@+id/rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:isIndicator="true"
+            android:numStars="5" />
+
+        <Button
+            android:id="@+id/btn_Agregar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:text="@string/btn_agregar" />
+
+
+    </LinearLayout>
+</ScrollView>

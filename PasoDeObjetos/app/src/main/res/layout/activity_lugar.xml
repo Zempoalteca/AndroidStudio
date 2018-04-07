@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.android.capacitacion.gabriel.pasodeobjetos.LugarActivity"
+    android:layout_margin="10dp">
+
+    <ImageView
+        android:id="@+id/imagen_lugar"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="#41254799"/>
+
+    <TextView
+        android:id="@+id/nombre_lugar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="36sp"
+        android:layout_below="@id/imagen_lugar"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:id="@+id/descrpcion_lugar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:layout_below="@id/nombre_lugar"
+        android:layout_marginTop="15dp"/>
+
+</RelativeLayout>

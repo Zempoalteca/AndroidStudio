@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">SQLite</string>
+    <string name="textoPuesto">Ingresa el puesto</string>
+</resources>

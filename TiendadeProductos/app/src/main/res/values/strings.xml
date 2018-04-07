@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Tienda de Productos</string>
+    <string name="tituloTienda">Cursos disponibles</string>
+    <string name="cero">0</string>
+    <string name="tv_requisitos">Requisitos:</string>
+    <string name="cost">Precio:</string>
+    <string name="etiquetaInstructor">Instructor</string>
+    <string name="btn_agregar">Agregar a carrito</string>
+    <string name="texto_total">Total:</string>
+    <string name="contentDescripcion">Content Descripcion</string>
+</resources>

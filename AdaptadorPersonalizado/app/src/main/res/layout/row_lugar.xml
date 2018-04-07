@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.android.capacitacion.gabriel.adaptadorpersonalizado.MainActivity">
+
+    <ImageView
+        android:id="@+id/imagen_lugar"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="#345067"/>
+
+    <TextView
+        android:id="@+id/nombre_lugar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="36sp"
+        android:layout_alignBottom="@id/imagen_lugar"
+        android:background="#783e3939"
+        android:textColor="#fff"/> <!-- Para forzar a que quede por encima de la imagen -->
+
+    <TextView
+        android:id="@+id/descripcion_lugar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:textSize="20sp"
+        android:layout_below="@id/imagen_lugar"/>
+
+    <Button
+        android:id="@+id/dislike_lugar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/dislike"
+        android:layout_below="@id/descripcion_lugar"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"/>
+    <Button
+        android:id="@+id/like_lugar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/like"
+        android:layout_toLeftOf="@id/dislike_lugar"
+        android:layout_alignTop="@id/dislike_lugar"
+        android:layout_marginRight="10dp"/>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:layout_margin="10dp">
+
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginRight="10dp">
+        <TextView
+            android:id="@+id/tv_tituloLP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tituloLP"
+            android:layout_marginBottom="10dp"
+            android:textStyle="bold"
+            android:gravity="center_horizontal"/>
+
+        <ListView
+            android:id="@+id/listaPendientes"
+            android:layout_width="200dp"
+            android:layout_height="230dp">
+        </ListView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginRight="10dp">
+
+        <TextView
+            android:id="@+id/tc_tituloLT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tituloLT"
+            android:layout_marginBottom="10dp"
+            android:textStyle="bold"
+            android:gravity="center_horizontal"/>
+        <ListView
+            android:id="@+id/listaTerminados"
+            android:layout_width="200dp"
+            android:layout_height="230dp">
+
+        </ListView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="150dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/et_tareaNueva"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="30dp"
+            android:hint="@string/texto_hintTareaNueva"
+            android:maxLines="2"/>
+        <Button
+            android:id="@+id/btn_Agregar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/texto_btnAgregar"/>
+    </LinearLayout>
+</LinearLayout>

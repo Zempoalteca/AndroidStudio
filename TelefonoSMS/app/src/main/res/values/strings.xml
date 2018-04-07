@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Telefono &amp; SMS</string>
+    <string name="ingresa_numero">Ingresa un número de telefono</string>
+    <string name="ingresa_texto">Ingresa un texto</string>
+    <string name="texto_btn">Llamar</string>
+    <string name="texto_btnSMS">Enviar SMS</string>
+    <string name="texto_btnLlamar">Llamar</string>
+</resources>

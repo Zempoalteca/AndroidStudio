@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Ciclo de Vida (Activity)</string>
+    <string name="btn_irActividad">Ir a la actividad dos</string>
+    <string name="tv_actividadDos">Actividad Dos</string>
+</resources>
