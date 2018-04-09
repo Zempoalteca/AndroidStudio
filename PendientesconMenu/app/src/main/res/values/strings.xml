@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Pendientes con Menu</string>
+    <string name="textoPendientes">Pendientes</string>
+    <string name="textoCategorias">Elige Categoría</string>
+    <string name="textoFecha">Introduce una fecha</string>
+    <string name="hint_titulo">Ingresa un titulo al pendiente</string>
+    <string name="hint_descripcion">Introduce una descripcion</string>
+    <string name="textoBtnAgregar">Agregar tarea</string>
+    <string name="textoTerminadas">Terminadas</string>
+</resources>

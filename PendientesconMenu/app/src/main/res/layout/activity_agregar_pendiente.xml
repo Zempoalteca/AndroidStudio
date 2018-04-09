@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        tools:context="zempoalteca.com.pendientesconmenu.AgregarPendienteActivity">
+
+        <TextView
+            android:id="@+id/texto_eligeCategorias"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/textoCategorias"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="10dp"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:gravity="center_horizontal"/>
+
+        <Spinner
+            android:id="@+id/sp_categorias"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/texto_eligeCategorias"
+            android:layout_marginTop="10dp"
+            style="@android:style/Widget.Holo.Light.Spinner"
+            android:layout_marginHorizontal="80dp">
+
+        </Spinner>
+        
+        <ImageView
+            android:id="@+id/img_categorias"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_below="@id/sp_categorias"
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="130dp"/>
+        
+        <EditText
+            android:id="@+id/et_titulo"
+            android:layout_below="@id/img_categorias"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginHorizontal="20dp"
+            android:hint="@string/hint_titulo"
+            android:maxLines="1"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/et_descripcion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/et_titulo"
+            android:layout_marginTop="20dp"
+            android:layout_marginHorizontal="20dp"
+            android:hint="@string/hint_descripcion"
+            android:maxLines="3"/>
+
+        <EditText
+            android:id="@+id/et_fecha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/textoFecha"
+            android:inputType="date"
+            android:focusable="false"
+            android:clickable="true"
+            android:maxLines="1"
+            android:layout_below="@id/et_descripcion"
+            android:layout_marginTop="20dp"
+            android:layout_marginHorizontal="80dp"
+            android:gravity="center_horizontal"/>
+
+        <Button
+            android:id="@+id/btn_agregar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/textoBtnAgregar"
+            android:layout_below="@id/et_fecha"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"/>
+
+    </RelativeLayout>
+
+</ScrollView>

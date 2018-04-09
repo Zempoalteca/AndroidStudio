@@ -29,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
     public static final int CARRITO_DE_COMPRAS = 2;
     ArrayList<Curso> cursos_a_comprar;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -139,14 +140,14 @@ public class MainActivity extends AppCompatActivity {
                         "\n" +
                         "Este curso está diseñado para brindarte las herramientas necesarias para llevar tu imagen personal a un siguiente nivel.",
                 "Sin requisitos",
-                5000, generaRanking()));
+                3_685, generaRanking()));
         cursos.add(new Curso(R.drawable.curso2, R.drawable.instructor2,
                 "Hablando frente al público",
                 "Adrián Cabrera Flores",
                 "El curso de Oratoria te enseña a empoderarte con tu palabra, te ayudamos a dominar el nerviosismo, los temblores, la boca seca y demás vicios de la expresividad verbal y no verbal. En el curso de hablar en publico participas una y otra vez en simulaciones de discursos frente a  muchas personas, cada vez que pasas al frente en el curso de oratoria, te vas sintiendo más suelto y mejor. Queremos que en el curso de oratoria te sientas muy bien cuando te toque pasar al frente a hablar en publico y además te ayude positivamente en tu carrera o trabajo.",
                 "Carta Motivos\n" +
                         "Requieres redactar una carta Motivos o intención, en donde nos indiques las metas que quieres alcanzar, es muy importante ya que así el instructor conocerá que quieres lograr y adecuará ejercicios para que lo logres.",
-                10000, generaRanking()));
+                8535, generaRanking()));
         cursos.add(new Curso(R.drawable.curso3, R.drawable.instructor3,
                 "Aprende a tocar Violín",
                 "Alberto Dominguez Flores",
@@ -173,7 +174,7 @@ public class MainActivity extends AppCompatActivity {
                         "La katana ha sido considerada desde siempre, como “el alma del guerrero”, y su uso con el paso de los años, fue variando desde el combate, en la época de los samurai, \n" +
                         "hacia el desarrollo técnico y espiritual, una vez aparecieron las armas de fuego y se hizo innecesario su uso, llegándose a prohibir portarla por las calles de Japón.",
                 "No se requiere contar con una Katana",
-                78435,generaRanking()));
+                7835,generaRanking()));
         cursos.add(new Curso(R.drawable.curso6,R.drawable.instructor6,
                 "Técnias de Dirección de Orquesta",
                 "Carlos Araujo Andrade",
@@ -186,13 +187,13 @@ public class MainActivity extends AppCompatActivity {
                 "Carlos Campos Rivera",
                 "En este curso de Probabilidad y Estadística estudiamos dos áreas fundamentales del conocimiento: La Probabilidad como una rama de las matemáticas que mide cuantitativamente la posibilidad de que un experimento produzca un determinado resultado, y la Estadística como ciencia formal que estudia la recolección, análisis e interpretación de datos de una muestra. Los temas que puedes encontrar a través de nuestras lecciones son: conceptos básicos de estadística, distribuciones unidimensionales ",
                 "Algebra Lineal Avanzada",
-                324523,generaRanking()));
+                4523,generaRanking()));
         cursos.add(new Curso(R.drawable.curso8,R.drawable.instructor8,
                 "Base de datos en MySQL",
                 "César Enrique Miranda López",
                 "Bienvenido!\nUn administrador de base de datos es un experto en el diseño y mantenimiento de las bases de datos relacionales. Su función es muy importante para todo negocio cuyo crecimiento depende del manejo eficiente de la información.",
                 "Curso Curador de Datos",
-                43215,generaRanking()));
+                4325,generaRanking()));
         cursos.add(new Curso(R.drawable.curso9,R.drawable.instructor9,
                 "Filosofía compleja",
                 "Cristian Rodríguez",
@@ -215,7 +216,7 @@ public class MainActivity extends AppCompatActivity {
                         "SEXUALIDADES, DISCAPACIDADES Y DIVERSIDADES \n" +
                         "INTERVENCIÓN EN RELACIONES ABUSIVAS",
                 "Sin requisitos",
-                56000, generaRanking()));
+                5600, generaRanking()));
         cursos.add(new Curso(R.drawable.curso11, R.drawable.instructor11,
                 "Aprende a tocar Piano",
                 "Daniel Gloria Florencio",

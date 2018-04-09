@@ -28,6 +28,8 @@ public class CarritoActivity extends AppCompatActivity {
     TextView precioCurso;
     Button quitarDeCarrito;
     ArrayList<Curso> cursos_carrito;
+    TextView totalCarrito;
+    double total_carrito = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,20 +48,15 @@ public class CarritoActivity extends AppCompatActivity {
         nombreInstructor = findViewById(R.id.nombre_instructor);
         precioCurso = findViewById(R.id.precio_curso);
         quitarDeCarrito = findViewById(R.id.btn_quitar);
-
+        totalCarrito = findViewById(R.id.tv_totalCarrito);
         lista = findViewById(R.id.listaCarrito);
-
         lista.setAdapter(new CursoAdapter(cursos_carrito));
 
-    }
-
-
-    /*public boolean onKeyDown(int keyCode, KeyEvent event){
-        if(keyCode == KeyEvent.KEYCODE_BACK){
-            startActivity(new Intent(MainActivity.this,ActividadDos.class));
+        for (int i = 0; i<cursos_carrito.size();i++){
+            total_carrito += cursos_carrito.get(i).getCosto();
         }
-        return false;
-    }*/
+        totalCarrito.setText(String.format("$ %1$.2f", total_carrito));
+    }
 
     @Override
     public boolean onKeyDown(int keyCode, KeyEvent event) {
@@ -92,6 +89,7 @@ public class CarritoActivity extends AppCompatActivity {
             TextView nombreInstructor = row.findViewById(R.id.nombre_instructor);
             TextView precioCurso = row.findViewById(R.id.precio_curso);
             Button btnQuitar = row.findViewById(R.id.btn_quitar);
+            final TextView totalCarrito = findViewById(R.id.tv_totalCarrito);
 
             //Se obtiene el objeto
             Curso cursoActual = cursosEnCarrito.get(position);
@@ -106,11 +104,14 @@ public class CarritoActivity extends AppCompatActivity {
                 @Override
                 public void onClick(View v) {
                     cursosEnCarrito.remove(position);
+                    total_carrito=0;
+                    for (int i = 0; i<cursos_carrito.size();i++){
+                        total_carrito += cursos_carrito.get(i).getCosto();
+                    }
+                    totalCarrito.setText(String.format("$ %1$.2f", total_carrito));
                     notifyDataSetChanged();
                 }
             });
-
-
             return row;
         }
 
