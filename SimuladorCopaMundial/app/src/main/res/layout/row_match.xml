@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/iv_bandera_izq"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:layout_margin="10dp"
+        android:contentDescription="@string/content_description"/>
+    <TextView
+        android:id="@+id/tv_equipo_izq"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/iv_bandera_izq"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:id="@+id/textoVS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/textoVersus"
+        android:layout_toEndOf="@id/tv_equipo_izq"
+        android:layout_marginTop="25dp"
+        android:layout_marginHorizontal="7dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorAccent"
+        android:textSize="25sp"/>
+
+    <TextView
+        android:id="@+id/tv_equipo_der"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_toStartOf="@id/iv_bandera_der"
+        android:layout_marginTop="30dp"
+        android:gravity="end"/>
+    
+    <ImageView
+        android:id="@+id/iv_bandera_der"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="10dp"
+        android:contentDescription="@string/content_description"/>
+
+    <TextView
+        android:id="@+id/texto_resultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textoVS"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="5dp"
+        android:textStyle="italic"/>
+
+</RelativeLayout>
